@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rafael Paulo">
+    <title>Quizz</title>
+</head>
+<body style="background-color: lightcyan">
+    <header>
+        <h3>
+            Quizz
+        </h3>
+    </header>
+    <main>
+        <p>Neste website irá responder a um conjunto de questões sobre a Costa da Caparica</p>
+        <form method="POST" action="mailto: rafael.paulo2000@gmail.com" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Quizz</legend>
+                <fieldset>
+                    <legend>info</legend>
+                    <input type="text" autocomplete="on" placeholder="Nome" name="nome" autofocus>
+                    <input type="text" autocomplete="on" placeholder="Apelido" name="apelido">
+                    <input type="email" autocomplete="on" placeholder="email" name="email">
+                </fieldset>
+                <fieldset>
+                    <legend>perguntas</legend>
+
+                    <p>1) Em que zona do país fica a Costa da Caparica?</p>
+                    <label>
+                        <input type="text" name="p1">
+                    </label>
+
+                    <p>2) A Costa da Caparica é muito conhecida pelo quê?</p>
+                    <label>
+                        <input type="radio" id="praia" name="p2" value="praia">
+                        <label for="praia">Praia</label><br>
+                        <input type="radio" id="piscina" name="p2" value="piscina">
+                        <label for="piscina">Piscina</label><br>
+                    </label>
+
+                    <p>3) Coisas que já fez na Costa da Caparica.</p>
+                    <label>
+                        <input type="checkbox" id="r1" name="p3" value="Ir à praia">
+                        <label for="r1">Ir à praia</label><br>
+                        <input type="checkbox" id="r2" name="p3" value="Comer gelado">
+                        <label for="r2">Comer gelado</label><br>
+                        <input type="checkbox" id="r3" name="p3" value="Passar férias">
+                        <label for="r3">Passar férias</label><br>
+                    </label>
+
+                    <p>4) Quando foi a ultima vez que visitou?</p>
+                    <label>
+                        <input type="date" name="p4">
+                    </label>
+
+                    <p>5) Qual é a cor caracteristica?</p>
+                    <label>
+                        <input type="color" name="p5">
+                    </label>
+
+                    <p>6) Quantas vezes vem à Costa por ano?</p>
+                    <label>
+                        <input min="0" type="number" name="p6">
+                    </label>
+
+                    <p>7) Que nota dá à Costa da Caparica?</p>
+                    <label>
+                        <input type="range" min="0" max="10" name="p7">
+                    </label>
+                </fieldset>
+                <textarea >Insira um comentário sobre o Quizz:
+                </textarea><br>
+                <input type="image" alt="Submit" width="48" height="48">
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+</html>
