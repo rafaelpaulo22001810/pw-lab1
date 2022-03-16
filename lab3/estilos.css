@@ -4,6 +4,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+*{
+    font-family: "Times New Roman", serif;
+}
 h1,h2{
     text-align: center;
 }
@@ -11,3 +14,50 @@ table, th, td{
     border: 2px solid black;
 
 }
+tr:nth-child(odd){
+    background-color: deeppink;
+}
+tr:nth-child(even){
+    background-color: goldenrod;
+}
+.alterado{
+    color: darkred;
+    font-weight: bold;
+}
+.alterado2{
+    color: red;
+}
+[target="click"]{
+    color: black;
+}
+a:link {
+  color: red;
+}
+a:visited {
+  color: gray;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color: blue;
+}
+#type1{
+    width: 400px;
+    height: 140px;
+    border: 4px double #1851b6;
+    margin-left: auto;
+    margin-right: auto
+}
+[title~=table1]{
+    border: 3px black;
+
+}
+#type2::first-letter{
+    color: goldenrod;
+}
+#type3::first-line{
+    color: deeppink;
+}
+
+

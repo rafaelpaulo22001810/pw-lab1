@@ -7,14 +7,30 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+
     <header>
-        <h3>
-            Quizz
-        </h3>
+        <center><h1> Costa da Caparica</h1></center>
+        <figure>
+            <center><img src="../lab2/images/Costa%20da%20Caparica.jpg"><br></center>
+        </figure>
     </header>
+
+    <nav>
+        <center>
+            <p><a href="../index.html">Home</a> | <a href="../lab2/index.html">Introdução</a> |
+            <a href="../lab2/local.html">Localização</a> | <a href="../lab2/multimedia.html"> Multimedia</a> |
+            <a href="../lab2/info.html">Informação</a> | <a href="html5-css.html"> HTML&CSS</a> | <a href="quizz.html" target="click"><b>Quizz</b></a> </p>
+        </center>
+    </nav>
+
+    <header>
+        <h3>Quizz</h3>
+    </header>
+
     <main>
         <p>Neste website irá responder a um conjunto de questões sobre a Costa da Caparica</p>
         <form method="POST" action="mailto: rafael.paulo2000@gmail.com" enctype="multipart/form-data">
+
             <fieldset>
                 <legend>Quizz</legend>
                 <fieldset>
@@ -28,7 +44,12 @@
                     <label>
                         <input type="email" autocomplete="on" placeholder="email" name="email">
                     </label>
+                    <div>
+                        <input type="submit">
+                    </div>
+
                 </fieldset>
+
                 <fieldset>
                     <legend>perguntas</legend>
 
@@ -75,9 +96,11 @@
                         <input type="range" min="0" max="10" name="p7">
                     </label>
                 </fieldset>
-                <textarea >Insira um comentário sobre o Quizz:
-                </textarea><br>
-                <input type="image" alt="Submit" width="48" height="48">
+
+                <label>
+                    <textarea>Insira um comentário sobre o Quizz:</textarea>
+                </label><br>
+                <input type="image" src="images/submit_icon.jpg" alt="Submit" width="48" height="48">
             </fieldset>
 
         </form>
