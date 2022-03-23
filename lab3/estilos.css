@@ -36,9 +36,6 @@ a:link {
 a:visited {
   color: gray;
 }
-a:hover {
-  color: hotpink;
-}
 a:active {
   color: blue;
 }
@@ -87,6 +84,89 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.menu{
+    display: flex;
+}
+.menu a:last-child{
+    margin-left: auto;
+}
+.menu a{
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover{
+    background: lightgray;
+    font-weight: bold;
+    border-radius: 20px 0 20px 0;
+}
+.dicas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: lightcyan;
+    padding: 10px;
+}
+.dicas > div{
+    background: rgba(145, 170, 234, 0.82);
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 25px;
+    box-shadow: 5px 5px 15px #888888;
+}
+.dicas div :first-child{
+    background: white;
+    border-radius: 15px 0 15px 0;
+}
+.dicas div div:last-child {
+    width: 150px;
+    height: 340px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destinos > *{
+    background: #7eaae3;
+    border: 1px black;
+    padding: 10px;
+    font-size: 10px;
+}
+div.destinos{
+    display: grid;
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+
+    grid-template-areas:
+       'img1 img2 img3 img4'
+       'img5 img5 img6 img4';
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
 }
 
 
