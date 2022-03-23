@@ -135,38 +135,61 @@ a:active {
     align-items: center;
 }
 .destinos > *{
-    background: #7eaae3;
-    border: 1px black;
-    padding: 10px;
-    font-size: 10px;
-}
-div.destinos{
-    display: grid;
+    background: #b2cbea;
 
-    grid-template-rows: 1fr 1fr;
+}
+div.destinos {
+    display: grid;
+    width: 1750px;
     grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 250px 250px;
+    gap: 10px;
+
 
     grid-template-areas:
-       'img1 img2 img3 img4'
-       'img5 img5 img6 img4';
+       'coimbra porto algarve campismo'
+       'lisboa lisboa aveiro campismo';
+}
+.destinos > div{
+    opacity: 80%;
+    text-align: center;
+    font-size: 20px;
 }
 .img1{
-    grid-area: img1;
+    grid-area: coimbra;
+    background-image: url("../lab4/images/locais/Coimbra.jpg");
+    background-repeat: no-repeat;
+    height: 240px;
 }
 .img2{
-    grid-area: img2;
+    grid-area: porto;
+    background-image: url("../lab4/images/locais/Porto.jpg");
+    background-repeat: no-repeat;
+    height: 240px;
 }
 .img3{
-    grid-area: img3;
+    grid-area: algarve;
+    background-image: url("../lab4/images/locais/Algarve.jpg");
+    background-repeat: no-repeat;
+    height: 240px;
 }
 .img4{
-    grid-area: img4;
+    grid-area: campismo;
+    background-image: url("../lab4/images/locais/Campismo.png");
+    background-repeat: no-repeat;
+    height: 480px;
 }
 .img5{
-    grid-area: img5;
+    grid-area: lisboa;
+    background-image: url("../lab4/images/locais/Lisboa.jpg");
+    background-repeat: no-repeat;
+    height: 240px;
 }
 .img6{
-    grid-area: img6;
+    grid-area: aveiro;
+    background-image: url("../lab4/images/locais/Aveiro.jpg");
+    background-repeat: no-repeat;
+    height: 240px;
 }
 
 
