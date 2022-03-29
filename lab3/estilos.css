@@ -144,6 +144,8 @@ a:active {
     grid-template-columns: 1fr 1fr 1fr 2fr;
     grid-template-rows: 250px 250px;
     gap: 10px;
+    margin-right: auto;
+    margin-left: auto;
 
     grid-template-areas:
        'coimbra porto algarve campismo'
@@ -181,9 +183,25 @@ a:active {
     border-radius: 20px;
     position: relative;
     grid-area: campismo;
-    background-image: url("../lab4/images/locais/Campismo.png");
-    background-repeat: no-repeat;
     height: 330px;
+}
+.img4 > div > img{
+    border-radius: 20px;
+}
+.img4 > div > div:first-child{
+    margin-top: 20px;
+    margin-left: -445px;
+    font-size: 40px;
+    font-weight: bold;
+    color: darkred;
+}
+.img4 > div > div{
+    margin-top: 30px;
+    margin-left: -270px;
+}
+.img4 > div > div:last-child{
+    margin-left: 480px;
+    margin-top: -60px;
 }
 .img5{
     border-radius: 20px;
@@ -227,6 +245,15 @@ a:active {
     right: 20px;
     line-height: 30px;
     color: white;
+}
+.botao{
+    background: darkred;
+    border-radius: 6px;
+    padding: 25px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-size: 27px;
 }
 
 
