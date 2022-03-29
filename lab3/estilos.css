@@ -87,6 +87,12 @@ a:active {
 }
 .menu{
     display: flex;
+    position: fixed;
+    overflow: hidden;
+    background-color: #000000;
+    top: 0;
+    width: 99%;
+    padding: 2px;
 }
 .menu a:last-child{
     margin-left: auto;
@@ -95,12 +101,14 @@ a:active {
     display: flex;
     padding: 20px;
     text-decoration: none;
-    color: black;
+    color: #000000;
+    background: #8b9cb9;
+    border-radius: 20px;
 }
 .menu a:hover{
     background: lightgray;
     font-weight: bold;
-    border-radius: 20px 0 20px 0;
+    border-radius: 20px;
 }
 .dicas{
     display: flex;
@@ -254,6 +262,53 @@ a:active {
     color: white;
     border: none;
     font-size: 27px;
+}
+.hero{
+    height: 98vh;
+    background-image: url("../lab4/images/banner-europa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-family: fantasy, serif;
+}
+footer{
+
+}
+.noback{
+    background: none;
+}
+.parallax {
+  background-image: url("https://source.unsplash.com/A5rCN8626Ck");
+
+  min-height: 150px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.titulos{
+    font-size: 40px;
+    font-weight: bold;
+}
+.grid_photos{
+    display: grid;
+    width: 1750px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin-right: auto;
+    margin-left: auto;
+
+    grid-template-areas:
+       '1 2 3 '
+       '4 5 6 7'
+       '8 9'
+       '10 11 12';
 }
 
 
