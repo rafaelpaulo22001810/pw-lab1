@@ -1,0 +1,393 @@
+body{
+    background-image: url("../images/Background.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    font-family: "Times New Roman", serif;
+}
+h1,h2{
+    text-align: center;
+}
+table, th, td{
+    border: 2px solid black;
+    text-align: center;
+}
+tr:nth-child(odd){
+    color: deeppink;
+}
+tr:nth-child(even){
+    color: goldenrod;
+}
+.alterado{
+    color: darkred;
+    font-weight: bold;
+}
+.alterado2{
+    color: red;
+}
+[target="click"]{
+    color: black;
+}
+a:link {
+  color: red;
+}
+a:visited {
+  color: gray;
+}
+a:active {
+  color: blue;
+}
+#type1{
+    width: 400px;
+    height: 140px;
+    border: 4px double #1851b6;
+    margin-left: auto;
+    margin-right: auto
+}
+[title~=table1]{
+    border: 3px black;
+
+}
+#type2::first-letter{
+    color: goldenrod;
+}
+#type3::first-line{
+    color: deeppink;
+}
+*{box-sizing: border-box;}
+.capitais{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: lightcyan;
+    padding: 50px;
+}
+.capitais > div{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+}
+.capitais img{
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+.capitais div div:last-child{
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    background-color: #000000;
+    top: 0;
+    width: 99%;
+    padding: 2px;
+}
+.menu a:last-child{
+    margin-left: auto;
+}
+.menu a{
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    color: #000000;
+    background: #8b9cb9;
+    border-radius: 20px;
+}
+.menu a:hover{
+    background: lightgray;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.dicas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: lightcyan;
+    padding: 10px;
+}
+.dicas > div{
+    background: rgba(145, 170, 234, 0.82);
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 25px;
+    box-shadow: 5px 5px 15px #888888;
+}
+.dicas div :first-child{
+    background: white;
+    border-radius: 15px;
+}
+.dicas div div:last-child {
+    width: 350px;
+    height: 150px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destinos > *{
+    background: #b2cbea;
+
+}
+.destinos {
+    display: grid;
+    width: 1750px;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 250px 250px;
+    gap: 10px;
+    margin-right: auto;
+    margin-left: auto;
+
+    grid-template-areas:
+       'coimbra porto algarve campismo'
+       'lisboa lisboa aveiro campismo';
+}
+.destinos > div{
+    text-align: center;
+    font-size: 20px;
+}
+.img1 {
+    border-radius: 20px;
+    position: relative;
+    grid-area: coimbra;
+    background-image: url("../lab4/images/locais/Coimbra.jpg");
+    background-repeat: no-repeat;
+    height: 240px;
+}
+.img2{
+    border-radius: 20px;
+    position: relative;
+    grid-area: porto;
+    background-image: url("../lab4/images/locais/Porto.jpg");
+    background-repeat: no-repeat;
+    height: 240px;
+}
+.img3{
+    border-radius: 20px;
+    position: relative;
+    grid-area: algarve;
+    background-image: url("../lab4/images/locais/Algarve.jpg");
+    background-repeat: no-repeat;
+    height: 240px;
+}
+.img4{
+    border-radius: 20px;
+    position: relative;
+    grid-area: campismo;
+    height: 330px;
+}
+.img4 > div > img{
+    border-radius: 20px;
+}
+.img4 > div > div:first-child{
+    margin-top: 20px;
+    margin-left: -445px;
+    font-size: 40px;
+    font-weight: bold;
+    color: darkred;
+}
+.img4 > div > div{
+    margin-top: 30px;
+    margin-left: -270px;
+}
+.img4 > div > div:last-child{
+    margin-left: 480px;
+    margin-top: -60px;
+}
+.img5{
+    border-radius: 20px;
+    position: relative;
+    grid-area: lisboa;
+    background-image:url("../lab4/images/locais/Lisboa.jpg");
+    width: 700px;
+    height: 240px;
+}
+.img6{
+    border-radius: 20px;
+    position: relative;
+    grid-area: aveiro;
+    background-image: url("../lab4/images/locais/Aveiro.jpg");
+    background-repeat: no-repeat;
+    height: 240px;
+}
+.texto {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    width: 250px;
+    line-height: 30px;
+    height: 20px;
+    color: white;
+}
+.destinos > div > p:first-child{
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    left: 20px;
+    line-height: 30px;
+    height: 20px;
+    color: white;
+    font-size: 30px;
+    font-family: "Arial Black", serif;
+}
+.destinos > div > p:last-child{
+    position: absolute;
+    top: 180px;
+    right: 20px;
+    line-height: 30px;
+    color: white;
+}
+.botao{
+    background: darkred;
+    border-radius: 6px;
+    padding: 25px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-size: 27px;
+}
+.hero{
+    height: 98vh;
+    background-image: url("../lab4/images/banner-europa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-family: fantasy, serif;
+}
+footer{
+
+}
+.noback{
+    background: none;
+}
+.parallax {
+  background-image: url("https://source.unsplash.com/A5rCN8626Ck");
+
+  min-height: 150px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.titulos{
+    font-size: 40px;
+    font-weight: bold;
+}
+.box{
+    display: flex;
+    width: 1860px;
+    height: 900px;
+}
+.grid_photos{
+    display: grid;
+    width: 1800px;
+    height: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-right: 60px;
+    margin-left: auto;
+
+
+    grid-template-areas:
+       'im11 im2 im3 im3'
+       'im11 im5 im6 im7'
+       'im1 im9 im4 im12'
+       'im10 im10 im8 im12';
+}
+
+.im1{
+    background-color:black;
+    width: 450px;
+    height: 200px;
+    grid-area: im1;
+}
+.im2{
+    background-color: #521919;
+    width: 450px;
+    height: 200px;
+    grid-area: im2;
+}
+.im3{
+    background-color: #7c5b5b;
+    width: 910px;
+    height: 200px;
+    grid-area: im3;
+}
+.im4{
+    background-color: #a8a2f8;
+    width: 450px;
+    height: 200px;
+    grid-area: im4;
+}
+.im5{
+    background-color: #ecb707;
+    width: 450px;
+    height: 200px;
+    grid-area: im5;
+}
+.im6{
+    background-color: #141144;
+    width: 450px;
+    height: 200px;
+    grid-area: im6;
+}
+.im7{
+    background-color: #40bba9;
+    width: 450px;
+    height: 200px;
+    grid-area: im7;
+}
+.im8{
+    background-color: #d1e77d;
+    width: 450px;
+    height: 200px;
+    grid-area: im8;
+}
+.im9{
+    background-color: #af4bb2;
+    width: 450px;
+    height: 200px;
+    grid-area: im9;
+}
+.im10{
+    background-color: #371fad;
+    width: 910px;
+    height: 200px;
+    grid-area: im10;
+}
+.im11{
+    background-color: #65b74d;
+    width: 450px;
+    height: 400px;
+    grid-area: im11;
+}
+.im12{
+    background-color: #8b9662;
+    width: 450px;
+    height: 410px;
+    grid-area: im12;
+}
+
