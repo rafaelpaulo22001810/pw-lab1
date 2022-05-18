@@ -1,0 +1,17 @@
+{% extends 'portfolio/layout.html' %}
+{% block main %}
+    {% load static %}
+    <div class = "contain">
+        <div class="box">
+            <img src={% static 'portfolio/images/PW.jpg' %}>
+            <p>Abc</p>
+        </div>
+        <div class="box">
+            <img src={% static 'portfolio/images/CG.jpeg' %}>
+        </div>
+        <div class="box">
+            <img src={% static 'portfolio/images/Data.png' %}>
+        </div>
+    </div>
+
+{% endblock main %}

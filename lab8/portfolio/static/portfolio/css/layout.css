@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  font-family: sans-serif;
+}
+
+header {
+  height: 10vh;
+  background: #1FAB89;
+  color: #F0FFF3;
+  top: 0;
+
+  /* alinhando logo e menu */
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div {
+  font-size: 2em;
+  padding: 1em;
+}
+
+header nav {
+  display:flex;
+  justify-contents: flex-end;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+  padding: 0 1em;
+  text-decoration: none;
+  font-size: 1rem;
+  color: lightgray;
+}
+
+
+main {
+  height: 85vh;
+  background-color:#62D2A2;
+  padding: 4em 4em;
+}
+
+footer {
+  height:5vh;
+  display:flex;
+  justify-content: flex-end;
+  padding: 0 2vw;
+  align-items: center;
+}
+.contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box{
+
+    margin-top: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    width: 450px;
+    height: 480px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.212);
+    background: white;
+    position: relative;
+    transition: all .4s;
+    border-radius: 20px;
+}
+.box img{
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.212);
+    cursor: pointer;
+    z-index: 10;
+    transition: all .4s;
+}
+.box:hover img{
+    margin-top: -140px;
+}
+.box:hover{
+    width: 450px;
+}
+.box > div::before{
+    content: "";
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+    color: rgb(51,51,51);
+    font-size: 0.6em;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+}

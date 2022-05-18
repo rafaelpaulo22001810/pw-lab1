@@ -1,0 +1,14 @@
+{% extends 'portfolio/layout.html' %}
+{% block main %}
+    {% load static %}
+    <img src="{% static 'portfolio/images/bard.png' %}" alt="imagem">
+    <br>
+    <p>
+        {% if hora > 12 %}
+            Boa tarde,
+        {% else %}
+            Bom dia,
+        {% endif %}
+        este é o meu portfolio
+    </p>
+{% endblock %}
