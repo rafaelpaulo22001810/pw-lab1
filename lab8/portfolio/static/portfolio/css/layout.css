@@ -30,6 +30,7 @@ header nav {
 nav{
     position: sticky;
     top: 0;
+    margin-left: 10px;
 }
 
 nav a {
@@ -98,4 +99,15 @@ footer {
     font-family: 'Font Awesome 5 Free';
     font-weight: 700;
 
+}
+.center{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+.test1{
+    position: relative;
+}
+.test{
+    position: absolute;
 }
