@@ -13,3 +13,7 @@ def home_page_view(request):
 
 def licenciatura_page_view(request):
     return render(request, 'portfolio/licenciatura.html')
+
+
+def projetos_page_view(request):
+    return render(request, 'portfolio/projetos.html')
