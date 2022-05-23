@@ -1,14 +1,16 @@
 {% extends 'portfolio/layout.html' %}
 {% block main %}
     {% load static %}
-    <img src="{% static 'portfolio/images/bard.png' %}" alt="imagem">
-    <br>
-    <p>
-        {% if hora > 12 %}
-            Boa tarde,
-        {% else %}
-            Bom dia,
-        {% endif %}
-        este é o meu portfolio
-    </p>
+    <section class="showcase">
+        <video src="{% static 'portfolio/images/img-heropage/video.mp4' %}" muted loop autoplay></video>
+    </section>
+    <div class="text">
+        <h2>Portfolio</h2>
+        <h3>All about me</h3>
+        <p>Este website contém todas as informações sobre a minha pessoa, projetos e objetivos</p>
+        <a href="#">See More</a>
+    </div>
+
+
+
 {% endblock %}
